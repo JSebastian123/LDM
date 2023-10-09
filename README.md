@@ -4,5 +4,5 @@ Class´s repository
 
 
 =======
-https://jsebastian123.github.io/LDM/
+https://jsebastian123.github.io/LDM/i.html
 ======
