@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad6</title>
 </head>
+
 <body>
-    
+    <fieldset style="margin-top: 50px; height: 150px; border: 2px solid black;">
+        <p style="width: 120px;
+            font-size: 18px;
+            margin-top: -30px;
+            margin-left: 10px;
+            background: white;">Indique sus preferencias</p>
+        <p>Elija una fecha <input type="date" value="2023-08-6" /></p>
+        <form method="post" action="/send/" enctype="multipart/form-data">
+            Elija un fichero <input type="file">
+        </form>
+        <br>
+        <form>
+            <input type="radio" id="amd" name="AMDsuperiorANvidia" value="AMD">AMD
+            <input type="radio" id="IntelI5" name="intel" value="INTELI5">IntelI5
+            <input type="radio" id="Intel7" name="intelV2" value="INTELI7">Intel
+        </form>
+    </fieldset>
+    <form>
+        <fieldset style="margin-top: 50px; height: 530px; width: 500px; border: 2px solid black;">
+            <legend> Indique sus preferencias por favor </legend>
+            <input type="radio" id="Maths" name="MathsDiff" value="MATH">Matemáticas
+            <input type="radio" id="History" name="History" value="HISTORY">Historia
+            <input type="radio" id="Geography" name="Geography" value="GEOGRAPHY">Geografía
+            <input type="radio" id="Tongue" name="Tongue" value="TONGUE">Lengua <br>
+
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre" name="Nombre"><br>
+            <label for="Apellido">Apellido:</label><br>
+            <input type="text" id="Apellido" name="Apellido"><br>
+            <label for="Direccion">Dirección:</label><br>
+            <input type="text" id="Direccion" name="Direccion"><br>
+
+            <label for="">Elija un color </label>
+            <input type="color" value="#ff0000" /><br>
+            <textarea name="MiPrimerTextArea" id="TextArea1" cols="30" rows="10">Utilice este cuadro para escribir</textarea><br>
+
+            Elija una fecha<input type="date" name="Calendar"><br><br>
+            <select name="Idioma">
+                <option value="Ingles">Inglés</option>
+                <option value="Aleman">Alemán</option>
+                <option value="Espanol">Español</option>
+            </select> <br><br>
+            Elija una hora<input type="time">
+            <br><br>
+
+            <form method="post" action="/send/" enctype="multipart/form-data">
+                Elija un fichero <input type="file">
+            </form>
+
+            <label for="Genre"><input style="border-radius: 20px;" type="radio" id="Genre" name="Genero" value="Mujer">Mujer
+                <input style="border-radius: 20%;" type="radio" id="Genre2" name="Genero" value="Hombre">Hombre</label>
+        </fieldset>
+    </form>
 </body>
+
 </html>
