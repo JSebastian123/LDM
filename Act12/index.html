@@ -10,11 +10,11 @@
             background-color: wheat;
         }
 
-        .Cuerpo {
+        main {
             float: right;
             text-align: left;
             background-color: white;
-            height: 80%;
+            height: 100%;
             width: 80%;
             margin-top: 5%;
         }
@@ -26,59 +26,61 @@
             float: right;
             margin-top: 5%;
         }
+
         /* aqui los baje un poco de su  */
         a {
             margin-top: 5%;
             display: block;
         }
+
         /* display block es para no tener que usar brs para hacer saltos
         de lines constantes  */
         p {
             display: block;
         }
+
         /*Aqui usamo clear : both; para que al usar elementos
         flotantes, el que no es flotante tenga que ir debajo de ellos */
-        .Pie_pagina {
+        footer {
             text-align: center;
             background-color: rgb(239, 203, 164);
-            width: 100%; 
+            width: 100%;
+
             clear: both;
         }
     </style>
 </head>
-<div class="Cabecera">
-    <header>
-        <h1>Libreria Juan Sebastian Perniola</h1>
-        <p>Leo libros y abri una tienda de lectura </p>
-    </header>
-    <div class="nav">
-        <nav>Catalago nuestro
-            <a href="https://cosmere.es/">Inicio</a>
-            <a href="https://cosmere.es/">Catalago de libros</a>
-            <a href="https://cosmere.es/">Aconteciminetos</a>
-            <a href="https://cosmere.es/">Contacto</a>
-        </nav>
-    </div>
 
-    <body>
-        <div class="Cuerpo">
-            <main>
-                <h2>Bienvenido a la tienda chingona</h2>
-                <p>Es un libreria que tiene libros y una amplia seleccion</p>
-                <p>Sobretodo nos centramos en libros escritos por Bran-</p>
-                <p>don Sanderson. El escritos de la saga de libros del cosemre</p>
-            </main>
-            <h3>Futuras actividades </h3>
-            <p> <strong>Club de lectura de Brandon Snaderson</strong>: Lectura de Mistborn era 1 hasta Mistbor era 2</p>
-            <p> <strong>Club de lectura Archivo de las tormentas : </strong> Capitulos de 1 al 20 para el 25 de
-                noviembre</p>
+<header>
+    <h1>Libreria Juan `Sebastian Perniola</h1>
+    <p>Leo libros y abri una tienda de lectura </p>
+</header>
 
-        </div>
+<nav>
+    <p>Catalago nuestro</p>
+    <a href="https://cosmere.es/">Inicio</a>
+    <a href="https://cosmere.es/">Catalago de libros</a>
+    <a href="https://cosmere.es/">Aconteciminetos</a>
+    <a href="https://cosmere.es/">Contacto</a>
+</nav>
 
-    </body>
-</div>
-<div class="Pie_pagina">
-    <footer>&#169; Copyrigth Libreria Pepino </footer>
-</div>
+
+<body>
+    <main>
+        <h2>Bienvenido a la tienda chingona</h2>
+        <p>Es un libreria que tiene libros y una amplia seleccion</p>
+        <p>Sobretodo nos centramos en libros escritos por Bran-</p>
+        <p>don Sanderson. El escritos de la saga de libros del cosemre</p>
+    
+    <h3>Futuras actividades </h3>
+    <p> <strong>Club de lectura de Brandon Snaderson</strong>: Lectura de Mistborn era 1 hasta Mistbor era 2</p>
+    <p> <strong>Club de lectura Archivo de las tormentas : </strong> Capitulos de 1 al 20 para el 25 de
+        noviembre</p>
+    </main>
+</body>
+
+
+<footer>&#169; Copyrigth Libreria Pepino </footer>
+
 
 </html>
