@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad14</title>
+    <style>
+        .logoCliente {
+
+            flex: 1;
+            /* va arriba a la izquierda */
+        }
+
+        p {
+            color: whitesmoke;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Centra verticalment els elements */
+        }
+
+        .navCaja {
+            background-color: black;
+        }
+
+        .barraBusqueda {
+            padding-right: 2%;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: whitesmoke;
+            padding: 10px;
+            transition: background 0.2s linear;
+        }
+
+        a:hover {
+            background: red;
+            transition: background 2s linear;
+        }
+
+        ul {
+
+            display: flex;
+            list-style: none;
+
+            gap: 20px;
+            /* gap etiqueta : espacio entre rows, columnas
+            en este caso solo uso ul por que solo tengo estas 4 ul, si fuera 
+            el caso que usase varias cols usarias la misma etiqueta en el conjunto de ul,il,ol */
+        }
+    </style>
+</head>
+<div class="navCaja">
+    <nav>
+        <div clas="logoCliente">
+            <p>Logo del Client</p>
+        </div>
+        <ul>
+            <li><a class="link" href="#">Inicio</a></li>
+            <li><a class="link" href="#">Noticioas</a></li>
+            <li><a class="link" href="#">Articulos </a></li>
+            <li><a class="link" href="#">Contacto</a></li>
+        </ul>
+        <div class="barraBusqueda">
+            <input type="text">
+        </div>
+
+    </nav>
+</div>
+<header>
+
+</header>
+
+<body>
+
+</body>
+
+</html>
