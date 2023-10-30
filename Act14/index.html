@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad14</title>
     <style>
-        .logoCliente {
-
+        p {
+            padding: 10px;
+            margin: 10px;
             flex: 1;
+            color: whitesmoke;
+
             /* va arriba a la izquierda */
         }
 
-        p {
-            color: whitesmoke;
+        input {
+            padding-right: 2%;
+            border-radius: 8px;
+            padding: 1px;
+            margin: 1px;
         }
 
         nav {
@@ -25,10 +31,6 @@
 
         .navCaja {
             background-color: black;
-        }
-
-        .barraBusqueda {
-            padding-right: 2%;
         }
 
         a {
@@ -48,7 +50,6 @@
 
             display: flex;
             list-style: none;
-
             gap: 20px;
             /* gap etiqueta : espacio entre rows, columnas
             en este caso solo uso ul por que solo tengo estas 4 ul, si fuera 
@@ -67,10 +68,8 @@
             <li><a class="link" href="#">Articulos </a></li>
             <li><a class="link" href="#">Contacto</a></li>
         </ul>
-        <div class="barraBusqueda">
-            <input type="text">
-        </div>
-
+        <!-- Aqui habia un div pero quiero ver el minimo de divs que puedo -->
+        <div class="barraBusqueda"><input type="busqueda" id="busqueda" name="busqueda"></div>
     </nav>
 </div>
 <header>
