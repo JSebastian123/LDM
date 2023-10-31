@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad15</title>
+    <style>
+        h2 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        section {
+            border-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            /* como autoajustar una imagen en div : objetc-fit property  */
+            object-fit: cover;
+            border-radius: 50%;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            padding: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .box1 {
+            margin: 1%;
+            padding: 1%;
+            width: 50%;
+            height: 20%;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            transition: all .3s ease-out-in;
+        }
+
+        .box1:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Conoce a nuestro equipo </h2>
+        <section>
+
+            <div class="box1">
+                <img src="img1.png" alt="imgannes-curriculm">
+                <p>Nombre de la persona</p>
+                <p>Posicion en la empresa</p>
+                <p>"Informacion sobre el mismo "</p>
+            </div>
+            <div class="box1">
+                <img src="img3.png" alt="imgannes-curriculm">
+                <p>Nombre de la persona</p>
+                <p>Posicion en la empresa</p>
+                <p>"Informacion sobre el mismo "</p>
+            </div>
+            <div class="box1">
+                <img src="img2.png" alt="imgannes-curriculm">
+                <p>Nombre de la persona</p>
+                <p>Posicion en la empresa</p>
+                <p>"Informacion sobre el mismo "</p>
+            </div>
+            <div class="box1">
+                <img src="img4.png" alt="imgannes-curriculm">
+                <p>Nombre de la persona</p>
+                <p>Posicion en la empresa</p>
+                <p>"Informacion sobre el mismo "</p>
+            </div>
+        </section>
+
+    </header>
+</body>
+
+</html>
