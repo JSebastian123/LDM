@@ -14,21 +14,20 @@
         text-align: left;
         font-size: 20px;
       }
-      ul{
+      ul {
         line-height: 3.5ex;
         list-style: none;
         display: inline;
-
       }
-      .item1 {
+      nav {
         background-color: rgba(255, 255, 255, 0.8);
         grid-area: nav;
         text-align: center;
         padding: 20px 0;
-        font-size: 30px;
+        font-size: 10 px;
       }
 
-      .item2 {
+      aside {
         background-color: rgba(255, 255, 255, 0.8);
         grid-area: Aside;
         padding: 6px;
@@ -36,87 +35,93 @@
         display: block;
       }
 
-      .item3 {
+      main {
         background-color: rgba(255, 255, 255, 0.8);
         grid-area: main;
         padding: 0ex;
       }
 
-      .item4 {
+      footer {
         background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
         grid-area: footer;
-        padding: 64px;
+        padding: 47px;
         /* Reducimos el padding para hacerlo menos grueso */
         font-size: 15px;
       }
 
       .grid-container {
         display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto 1fr auto;
         grid-template-areas:
-          "nav nav nav nav nav"
+          "nav nav nav"
           /* Modificamos la cuadrícula para que nav ocupe toda la fila */
-          "Aside main main main main "
-          "footer footer footer footer footer";
+          "Aside main main"
+          "footer footer footer";
         /* Cambiamos el valor de la fila del main */
         background-color: #2196f3;
         gap: 5px;
         padding: 5px;
-        /* width: 100%; */
-        /* height: 100%; */
       }
     </style>
   </head>
 
-  <body>
-    <div class="grid-container">
-      <div class="item1">Soy la una barra-nav</div>
-      <div class="item2">Aside
-        <ul>
-            <li><a href="">Libros</a></li>
-            <li><a href="">Escritores</a></li>
-            <li><a href="">Mas informacion</a></li>
-            <li><a href="">Gatos</a></li>
-        </ul>
-      </div>
-      <div class="item3">
-        <h2>Main</h2>
-        <article>Articulo 1</article>
-        <sub>subtitulo</sub>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-          similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-          reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-          optio assumenda enim?
-        </p>
-        <article>Articulo 2</article>
-        <sub>subtitulo</sub>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-          similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-          reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-          optio assumenda enim?
-        </p>
+  <body class="grid-container">
+    <nav>
+      <h1>Soy la una barra-nav-pero en realida soy un h1</h1>
+    </nav>
+    <aside>
+      <h2>Aside</h2>
+      <ul>
+        <li><a href="">Libros</a></li>
+        <li><a href="">Escritores</a></li>
+        <li><a href="">Mas informacion</a></li>
+        <li><a href="">Gatos</a></li>
+      </ul>
+    </aside>
+    <main>
+      <h2>Main</h2>
+      <article>Articulo 1</article>
+      <sub>subtitulo</sub>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+        optio assumenda enim?
+      </p>
+      <article>Articulo 2</article>
+      <sub>subtitulo</sub>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+        optio assumenda enim?
+      </p>
 
-        <article>Articulo 3</article>
-        <sub>subtitulo</sub>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-          similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-          reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-          optio assumenda enim?
-        </p>
+      <article>Articulo 3</article>
+      <sub>subtitulo</sub>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+        optio assumenda enim?
+      </p>
 
-        <article>Articulo 4</article>
-        <sub>subtitulo</sub>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-          similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-          reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-          optio assumenda enim?
-        </p>
-      </div>
-      <div class="item4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, excepturi sed soluta aliquam sit dignissimos aut quasi cumque similique tempora modi dolorem, neque recusandae, vero velit. Facere cum ut dicta.</div>
-    </div>
+      <article>Articulo 4</article>
+      <sub>subtitulo</sub>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+        optio assumenda enim?
+      </p>
+    </main>
+    <!-- footer -->
+    <footer>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, excepturi
+      sed soluta aliquam sit dignissimos aut quasi cumque similique tempora modi
+      
+    </footer>
   </body>
 </html>
