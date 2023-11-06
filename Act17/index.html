@@ -1,126 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
 
-      h3 {
-        text-align: left;
-        font-size: 20px;
-      }
-      ul {
-        line-height: 3.5ex;
-        list-style: none;
-        display: inline;
-      }
-      nav {
-        background-color: rgba(255, 255, 255, 0.8);
-        grid-area: nav;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 10 px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-      aside {
-        background-color: rgba(255, 255, 255, 0.8);
-        grid-area: Aside;
-        padding: 6px;
-        font-size: 15px;
-        display: block;
-      }
+    h3 {
+      text-align: left;
+      font-size: 20px;
+    }
 
-      main {
-        background-color: rgba(255, 255, 255, 0.8);
-        grid-area: main;
-        padding: 0ex;
-      }
+    ul {
+      line-height: 3.5ex;
+      list-style: none;
+      display: inline;
+    }
 
-      footer {
-        background-color: rgba(255, 255, 255, 0.8);
-        text-align: center;
-        grid-area: footer;
-        padding: 47px;
-        /* Reducimos el padding para hacerlo menos grueso */
-        font-size: 15px;
-      }
+    nav {
+      background-color: rgba(255, 255, 255, 0.8);
+      grid-area: nav;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 10 px;
+    }
 
-      .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas:
-          "nav nav nav"
-          /* Modificamos la cuadrícula para que nav ocupe toda la fila */
-          "Aside main main"
-          "footer footer footer";
-        /* Cambiamos el valor de la fila del main */
-        background-color: #2196f3;
-        gap: 5px;
-        padding: 5px;
-      }
-    </style>
-  </head>
+    aside {
+      background-color: rgba(255, 255, 255, 0.8);
+      grid-area: Aside;
+      padding: 6px;
+      font-size: 15px;
+      display: block;
+    }
 
-  <body class="grid-container">
-    <nav>
-      <h1>Soy la una barra-nav-pero en realida soy un h1</h1>
-    </nav>
-    <aside>
-      <h2>Aside</h2>
-      <ul>
-        <li><a href="">Libros</a></li>
-        <li><a href="">Escritores</a></li>
-        <li><a href="">Mas informacion</a></li>
-        <li><a href="">Gatos</a></li>
-      </ul>
-    </aside>
-    <main>
-      <h2>Main</h2>
-      <article>Articulo 1</article>
-      <sub>subtitulo</sub>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-        optio assumenda enim?
-      </p>
-      <article>Articulo 2</article>
-      <sub>subtitulo</sub>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-        optio assumenda enim?
-      </p>
+    main {
+      background-color: rgba(255, 255, 255, 0.8);
+      grid-area: main;
+      padding: 1ex;
+    }
 
-      <article>Articulo 3</article>
-      <sub>subtitulo</sub>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-        optio assumenda enim?
-      </p>
+    footer {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      grid-area: footer;
+      padding: 47px;
+      /* Reducimos el padding para hacerlo menos grueso */
+      font-size: 15px;
+    }
 
-      <article>Articulo 4</article>
-      <sub>subtitulo</sub>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
-        similique asperiores, temporibus et porro ipsa eveniet velit. Ad
-        reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
-        optio assumenda enim?
-      </p>
-    </main>
-    <!-- footer -->
-    <footer>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, excepturi
-      sed soluta aliquam sit dignissimos aut quasi cumque similique tempora modi
-    </footer>
-  </body>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        /* Modificamos la cuadrícula para que nav ocupe toda la fila */
+        "nav nav nav"
+        "Aside main main"
+        "footer footer footer";
+      /* Cambiamos el valor de la fila del main */
+      background-color: #2196f3;
+      gap: 5px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body class="grid-container">
+  <nav>
+    <h1>Soy la una barra-nav-pero en realida soy un h1</h1>
+  </nav>
+  <aside>
+    <h2>Aside</h2>
+    <ul>
+      <li><a href>Libros</a></li>
+      <li><a href>Escritores</a></li>
+      <li><a href>Mas informacion</a></li>
+      <li><a href>Gatos</a></li>
+    </ul>
+  </aside>
+  <main>
+    <h2>Main</h2>
+    <article>Articulo 1</article>
+    <sub>subtitulo</sub>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+      similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+      reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+      optio assumenda enim?
+    </p>
+    <article>Articulo 2</article>
+    <sub>subtitulo</sub>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+      similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+      reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+      optio assumenda enim?
+    </p>
+
+    <article>Articulo 3</article>
+    <sub>subtitulo</sub>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+      similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+      reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+      optio assumenda enim?
+    </p>
+
+    <article>Articulo 4</article>
+    <sub>subtitulo</sub>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+      similique asperiores, temporibus et porro ipsa eveniet velit. Ad
+      reiciendis alias accusantium? Nam, tempora nostrum exercitationem non
+      optio assumenda enim?
+    </p>
+  </main>
+  <!-- footer -->
+  <footer>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, excepturi
+    sed soluta aliquam sit dignissimos aut quasi cumque similique tempora modi
+  </footer>
+</body>
+
 </html>
