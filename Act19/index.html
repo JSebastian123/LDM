@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad14</title>
+    <style>
+        button {
+            display: none;
+        }
+
+        p {
+            padding: 10px;
+            margin: 10px;
+
+            color: whitesmoke;
+
+            /* va arriba a la izquierda */
+        }
+
+        input {
+
+            border-radius: 8px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            /* Centra verticalment els elements */
+        }
+
+        .navCaja {
+            background-color: black;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: whitesmoke;
+            /* padding: 10px; */
+            transition: background 0.2s linear;
+        }
+
+        a:hover {
+            background: red;
+            transition: background 2s linear;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 750px) {
+            ul {
+                display: none;
+            }
+
+            button {
+                display: flex;
+                margin-right: 20px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            ul {
+                display: none;
+            }
+
+            input {
+                display: none;
+            }
+
+            button {
+                display: flex;
+                margin-right: 20px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 360px) {
+            ul {
+                display: none;
+            }
+
+            input {
+                display: none;
+            }
+
+            .navCajav {
+                display: none;
+            }
+
+            button {
+                display: flex;
+                margin-right: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<div class="navCaja">
+    <nav>
+        <div clas="logoCliente">
+            <p>Logo del Client</p>
+        </div>
+        <ul>
+            <li><a class="link" href="#">Inicio</a></li>
+            <li><a class="link" href="#">Noticioas</a></li>
+            <li><a class="link" href="#">Articulos </a></li>
+            <li><a class="link" href="#">Contacto</a></li>
+        </ul>
+        <!-- Aqui habia un div pero quiero ver el minimo de divs que puedo -->
+        <input type="busqueda" id="busqueda" name="busqueda">
+        <!-- posicion importa segun donde va la etiqueta -->
+        <button> ☰ </button>
+    </nav>
+</div>
+
+<body>
+</body>
+
+</html>

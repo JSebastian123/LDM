@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(249, 249, 249);
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        body {
+            background-color: rgb(239, 47, 47);
+        }
+
+        .dolor::after {
+            content: "Mido 1000px";
+        }
+    }
+
+    @media screen and (max-width:750px) {
+        body {
+            background-color: rgb(194, 108, 108);
+        }
+
+        .dolor::after {
+            content: ' (' "AAAA MIGUEELL!! NOO MIGUEL!!" ')';
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        body {
+            background-color: rgb(255, 69, 69);
+        }
+
+        .dolor::after {
+            content: ' (' "AAAA MIGUEELL!! NOO MIGUEL!! PORFAVOR PARA" ')';
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        body {
+            background-color: rgb(130, 0, 0)
+        }
+
+        .dolor::after {
+            content: ' (' "AAAA MIGUEELL!! NOO MIGUEL!! TENGO FAMILIA HIJOS POR FAVOR" ')';
+        }
+    }
+
+    @media screen and (max-width:250px) {
+        body {
+            background-color: rgb(0, 41, 130)
+        }
+
+        .dolor::after {
+            content: ' (' "AAAA MIGUEELL!! NOO MIGUEL!! PORFAVOOORR" ')';
+        }
+    }
+</style>
+
+<body>
+    <h1>Cambiame de color</h1>
+    <p>Si me apretan me cambio de color, a mas chiquito mas me enfado</p>
+    <p>Aqui te dijo cuando que px me me molesatan mas
+    <p class="dolor"></p>
+    </p>
+</body>
+
+</html>
