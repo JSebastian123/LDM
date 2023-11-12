@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        nav {
+            color: white;
+            background-color: rgba(33, 106, 151, 0.8);
+            grid-area: nav;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .TituloIzq {
+            margin-left: 25px;
+            display: flex;
+        }
+
+        .buscador {
+            display: flex;
+            margin-right: 20px;
+            height: 20px;
+        }
+
+        /* main 1 de aqui hasta el fin es main s */
+        .contenedor1 {
+            grid-area: main1;
+            display: flex;
+
+            background-color: grey;
+            width: 100%;
+        }
+
+        .articulo1 {
+            margin: 64px;
+            padding: 4px;
+            float: left;
+        }
+
+        .articulo1 article {
+            /* Estilos para el artículo, puedes ajustar según tus necesidades */
+            line-height: 1.6;
+        }
+
+        .img1 {
+            border-radius: 100%;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding: 17px;
+            margin: 45px;
+            height: 25%;
+            float: right;
+            width: 100%;
+        }
+
+        /* main 2 dijamosle  */
+        .contenedor2 {
+            display: flex;
+            grid-area: main2;
+            background-color: rgb(247, 0, 0);
+            padding: 20px;
+        }
+
+
+        .contenedor2 h2 {
+            float: left;
+            margin: 20px;
+        }
+
+
+        .contenedor2 article {
+            background-color: rgb(214, 194, 194);
+            margin: 2%;
+            padding: 2%;
+            width: 25%;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            transition: all .3s ease-out-in;
+        }
+
+        .contenedor2 article:hover {
+            transform: scale(1.05);
+        }
+
+        .imgLogo1 {
+            border-radius: 100%;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding: 25px;
+            background-color: whitesmoke(226, 49, 14);
+
+        }
+
+        /* fin del "main 2" */
+
+        /* principio main 3 */
+        .contenedor3 h2 {
+            float: none;
+            /* Elimina el float para evitar problemas de alineación */
+            flex-basis: 100%;
+            margin: 20px;
+        }
+
+        .contenedor3 {
+            display: flex;
+            flex-wrap: wrap;
+            grid-area: main3;
+            /* Permite que los elementos se envuelvan en una nueva línea si no caben en el contenedor */
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+        }
+
+        .contenedor3 article {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        /* fin main 3 */
+        /* Inicio formulario0 */
+        .formulario {
+            grid-area: formulario;
+            background-color: red;
+        }
+
+        /* fin formulario */
+        /* footer inicio */
+        footer {
+            grid-area: footer;
+            background-color: black;
+        }
+
+        /* foter  final */
+        body {
+            margin: 1pc;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                /* Modificamos la cuadrícula para que nav ocupe toda la fila */
+                "nav nav"
+                "main1 main1 "
+                "main2 main2 "
+                "main3 main3"
+                "formulario formulario"
+                "footer footer ";
+            /* Cambiamos el valor de la fila del main */
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2 class="TituloIzq">CIDETechs</h2>
+        <ul class="lista">
+            <li><a class="link" href="#">Inicio</a></li>
+            <li><a class="link" href="#">Sobre Nosotros</a></li>
+            <li><a class="link" href="#">Serveis</a></li>
+            <li><a class="link" href="#">Portofolio</a></li>
+            <li><a class="link" href="#">Contacto</a></li>
+        </ul>
+        <input class="buscador" type="busqueda" id="busqueda" name="busqueda" placeholder="busqueda">
+
+    </nav>
+    <main>
+        <div class="contenedor1">
+            <div class="articulo1">
+                <h2>Sobre nosotros</h2>
+                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum iusto et eligendi
+                    perspiciatis
+                    quod
+                    porro doloribus, a explicabo totam sint hic sapiente cumque voluptates quibusdam, eos nemo ea!
+                    Porro!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum iusto et eligendi perspiciatis
+                    quod
+                    porro doloribus, a explicabo totam sint hic sapiente cumque voluptates quibusdam, eos nemo ea!
+                    Porro!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum iusto et eligendi perspiciatis
+                    quod
+                    porro doloribus, a explicabo totam sint hic sapiente cumque voluptates quibusdam, eos nemo ea!
+                    Porro!
+
+                </article>
+
+            </div>
+            <img class="img1" src="genteSeria.png" alt="">
+        </div>
+        <div class="contenedor2">
+            <h2>Nuestros servicios</h2>
+
+            <article class="articuloDecorado">
+                <img src="imgLogo1.png" alt="imgannes-curriculm">
+                <p class="primrera-linea">Diseño Grafico</p>
+                <p class="segunda-linea">Creacion de soluciones visuales para tu marca. Incluyendo logotipos,
+                    identidad corporativa y publicidad</p>
+            </article>
+            <article class="articuloDecorado">
+                <img src="imgLogo1.png" alt="imgannes-curriculm">
+                <p class="primrera-linea">Desarrollo WEB y videojuegos</p>
+                <p class="primrera-linea">Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
+                    tiendas en linea complejas </p>
+            </article>
+            <article class="articuloDecorado">
+                <img src="imgLogo1.png" alt="imgannes-curriculm">
+                <p class="primrera-linea">Cualquier cosa blala</p>
+                <p class="segunda-linea">
+                    Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
+                    tiendas en linea complejas</p>
+            </article>
+            <article class="articuloDecorado">
+                <img src="imgLogo1.png" alt="imgannes-curriculm">
+                <p class="primrera-linea">Soporte tecnico</p>
+                <p class="segunda-linea">Asistencia y soporte continuo para todos nuestros servicios</p>
+            </article>
+        </div>
+
+        <div class="contenedor3">
+            <h2>Nuestros portfolios</h2>
+            <article>
+                <img src="imgPortofolio.png" alt="imgannes-portfolio">
+                <p class="primrera-linea">Patrick Rothfuss</p>
+                <p class="segunda-linea">Posicion en la empresa</p>
+                <p class="tercera-linea">"Informacion sobre el mismo "</p>
+            </article>
+            <article>
+                <img src="img1.png" alt="imgannes-portfolio">
+                <p class="primrera-linea">Patrick Rothfuss</p>
+                <p class="segunda-linea">Posicion en la empresa</p>
+                <p class="tercera-linea">"Informacion sobre el mismo "</p>
+            </article>
+            <article class="articuloPortfolio3">
+                <img src="img1.png" alt="imgannes-portfolio">
+                <p class="primera-linea">Patrick Rothfuss</p>
+                <p class="segunda-linea">Posicion en la empresa</p>
+                <p class="tercera-linea">"Informacion sobre el mismo "</p>
+            </article>
+        </div>
+        <div class="formulario">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <p>enviar</p>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <ol>CIDETechs</ol>
+        </ul>
+        <ul>
+            <ol>Navegacion</ol>
+            <ol></ol>
+            <ol></ol>
+            <ol></ol>
+        </ul>
+        <ul>
+            <ol>Contactos</ol>
+            <ol></ol>
+            <ol></ol>
+        </ul>
+        <ul>
+            <ol>redes</ol>
+        </ul>
+    </footer>
+</body>
+
+</html>
