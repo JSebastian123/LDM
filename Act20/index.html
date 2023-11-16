@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        body main {
+            font-family: Arial, sans-serif;
+        }
+
         nav {
             color: white;
             background-color: rgba(33, 106, 151, 0.8);
             grid-area: nav;
             padding: 20px 0;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+        }
 
+        nav button {
+            display: none;
         }
 
         nav ul {
@@ -55,22 +62,18 @@
             line-height: 1.6;
         }
 
-        .img1 {
-            border-radius: 100%;
-            border-top-right-radius: 25px;
+        .contenedor1 img {
             border-top-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-            border-bottom-left-radius: 25px;
-            padding: 17px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            /* padding: 17px; */
             margin: 45px;
             height: 25%;
-            float: right;
-            width: 100%;
         }
 
         /* main 2 dijamosle  */
         .contenedor2 {
-            display: flex;
+            display: block;
             grid-area: main2;
             background-color: rgb(242 239 239);
             padding: 20px;
@@ -78,33 +81,34 @@
 
 
         .contenedor2 h2 {
-            margin-bottom: 2% 2% 2% 2%;
-            float: left;
-
+            text-align: lef
         }
 
-        article img {
-            width: 33%;
-            height: 17%;
+        .contenedor2 img {
+            align-items: center;
+            object-fit: cover;
+            width: 10pc;
+            margin-left: 87px;
+            height: 10pc;
 
         }
 
         .contenedor2 p {
-            width: 100%;
+            /* width: 100%; */
             text-align: center;
         }
 
         .contenedor2 article {
-            display: flex;
-            background-color: rgb(255, 255, 255);
-            margin: 8% 1% 3% 3%;
-            padding: 2%;
-            width: 25%;
+            margin: 10px;
+            /* margin-left: 10px; */
+            align-items: self-start;
+            width: 20pc;
+            height: 345px;
+            background-color: rgb(176, 172, 172);
+            border-radius: 10px;
+            display: inline-grid;
             box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-            transition: all .3s ease-out-in;
-            justify-content: space-evenly;
-            align-content: stretch;
-            flex-wrap: wrap;
+            transition: all 0.3s ease-out-in;
         }
 
 
@@ -117,66 +121,77 @@
         /* fin del "main 2" */
 
         /* principio main 3 */
-        .contenedor3 h2 {
-            float: left;
-            margin: -37px 17px 248px 10px;
-            font-size: 5ex;
+
+        .contenedor3 img {
+            border-radius: inherit;
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+            height: 224px;
         }
 
         .contenedor3 {
-            display: flex;
-            grid-area: main3;
-            /* Permite que los elementos se envuelvan en una nueva línea si no caben en el contenedor */
-            align-items: center;
-            background-color: white;
-        }
-
-        .imgPortfolio {
-            width: 31ex;
-            height: 24ex;
+            display: block;
+            grid-area: main2;
+            background-color: rgb(242 239 239);
+            padding: 20px;
         }
 
         .contenedor3 article {
-            display: flex;
-            background-color: rgb(255, 255, 255);
-            margin: 12% 3% 3% 3%;
-            padding: 2%;
-            width: 100%;
-            height: 227px;
-            justify-content: space-evenly;
-            /* align-content: stretch; */
-            flex-wrap: wrap;
+            margin: 10px;
+            margin-left: 10%;
+            align-items: self-start;
+            width: 20pc;
+            background-color: rgb(176, 172, 172);
+            border-radius: 10px;
+            display: inline-grid;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-out-in;
         }
 
+        .contenedor3 article:hover {
+            transform: scale(1.05);
+        }
 
-        article p {
-            width: 100%;
+        .contenedor3 h2 {
+            text-align: left;
+        }
+
+        .contenedor3,
+        p h4 {
+
             text-align: center;
         }
 
         /* fin main 3 */
         /* Inicio formulario0 */
+        label {
+            margin: 5px;
+        }
 
         form {
-            grid-area: form;
-            display: flex;
-            margin: 136px 20px 20px 20px;
-           
-            justify-content: center;
-            align-items: baseline;
-            /* flex-wrap: wrap; */
+            display: grid;
+            margin: 55px 64px 50px 120px;
+            align-items: center;
+            grid-area: main4;
             flex-direction: column;
         }
 
         form h3 {
-            text-align: left;
+            float: left;
         }
 
-        label,
-        input {
-            display: inline-block;
-            width: 80px;
-            margin-bottom: 59px;
+        form input {
+
+            display: block;
+            height: 100%;
+            width: auto;
+        }
+
+        form textarea {
+            display: block;
+            height: 100%;
+            width: auto;
         }
 
         /* fin formulario */
@@ -212,17 +227,74 @@
         body {
             font-family: Arial, sans-serif;
             margin: 10px;
-            grid-template-rows: auto 1fr auto;
+            grid-template-rows: auto 2fr auto;
             grid-template-areas:
                 /* Modificamos la cuadrícula para que nav ocupe toda la fila */
                 "nav nav"
                 "main1 main1 "
                 "main2 main2 "
                 "main3 main3"
-                "form form"
+                "main4 main4"
                 "footer footer ";
             /* Cambiamos el valor de la fila del main */
             background-color: white;
+        }
+
+        @media screen and (max-width: 1280px) {
+            nav ul {
+                display: none;
+            }
+
+            nav button {
+                margin: 20px;
+                display: inline;
+            }
+
+            .contenedor2 {
+                display: block;
+                grid-area: main2;
+                background-color: rgb(242 239 239);
+                padding: 20px;
+            }
+
+            .contenedor1 img {
+                display: block;
+            }
+
+            .contenedor2 article {
+                margin-bottom: 20px;
+                margin-left: 131px;
+            }
+
+        }
+
+        @media screen and (max-width: 693px) {
+            .contenedor2 {
+                display: grid;
+                justify-content: end;
+                align-content: stretch;
+                align-items: center;
+                justify-items: center;
+            }
+
+            .contenedor2 article {
+                display: grid;
+                justify-content: center;
+            }
+
+            nav button {
+                margin: 20px;
+                display: inline;
+            }
+
+
+            nav input {
+                display: none;
+            }
+
+            .contenedor1 {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -237,6 +309,7 @@
             <li><a class="link" href="#">Portofolio</a></li>
             <li><a class="link" href="#">Contacto</a></li>
         </ul>
+        <button> ☰ </button>
         <input class="buscador" type="busqueda" id="busqueda" name="busqueda" placeholder="busqueda">
 
     </nav>
@@ -244,20 +317,13 @@
         <div class="contenedor1">
             <div class="articulo1">
                 <h2>Sobre nosotros</h2>
-                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum iusto et eligendi
-                    perspiciatis
-                    quod
-                    porro doloribus, a explicabo totam sint hic sapiente cumque voluptates quibusdam, eos nemo ea!
-                    Porro!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum iusto et eligendi perspiciatis
-                    quod
-                    porro doloribus, a explicabo totam sint hic sapiente cumque voluptates quibusdam, eos nemo ea!
-                    Porro!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor cum iusto et eligendi perspiciatis
-                    quod
-                    porro doloribus, a explicabo totam sint hic sapiente cumque voluptates quibusdam, eos nemo ea!
-                    Porro!
-
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti enim, veniam
+                    facilis vel error aut pariatur excepturi reiciendis fugit animi quos possimus iste voluptas!
+                    Reprehenderit magni fuga atque modi?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit esse saepe quibusdam nostrum quo.
+                    Laudantium rem facere voluptatibus adipisci doloribus debitis nulla? Quis qui, quas vero doloribus
+                    deleniti nulla odit!
                 </article>
 
             </div>
@@ -267,26 +333,26 @@
             <h2>Nuestros servicios</h2>
 
             <article class="articuloDecorado">
-                <img src="auriculares.png" alt="imgannes-curriculm">
+                <img class="imagenContenedor2" src="auriculares.png" alt="imgannes-curriculm">
                 <p class="primrera-linea">Diseño Grafico</p>
                 <p class="segunda-linea">Creacion de soluciones visuales para tu marca. Incluyendo logotipos,
                     identidad corporativa y publicidad</p>
             </article>
             <article class="articuloDecorado">
-                <img src="soporte.png" alt="imgannes-curriculm">
+                <img class="imagenContenedor2" src="soporte.png" alt="imgannes-curriculm">
                 <p class="primrera-linea">Desarrollo WEB y videojuegos</p>
                 <p class="primrera-linea">Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
                     tiendas en linea complejas </p>
             </article>
             <article class="articuloDecorado">
-                <img src="desarrolloWEB.png" alt="imgannes-curriculm">
+                <img class="imagenContenedor2" src="desarrolloWEB.png" alt="imgannes-curriculm">
                 <p class="primrera-linea">Cualquier cosa blala</p>
                 <p class="segunda-linea">
                     Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
                     tiendas en linea complejas</p>
             </article>
             <article class="articuloDecorado">
-                <img src="apreton.png" alt="imgannes-curriculm">
+                <img class="imagenContenedor2" src="apreton.png" alt="imgannes-curriculm">
                 <p class="primrera-linea">Soporte tecnico</p>
                 <p class="segunda-linea">Asistencia y soporte continuo para todos nuestros servicios</p>
             </article>
@@ -296,7 +362,7 @@
             <h2>Nuestros portfolios</h2>
             <article class="box-la-del-izq">
                 <img class="imgPortfolio" src="oficina1.jpg" alt="imagen-portfolio">
-                <p class="primrera-linea">Patrick Rothfuss</p>
+                <h4 class="primrera-linea">Patrick Rothfuss</h4>
                 <p class="segunda-linea">Posicion en la empresa</p>
                 <p class="tercera-linea">"Informacion sobre el mismo "</p>
             </article>
@@ -313,22 +379,21 @@
                 <p class="tercera-linea">"Informacion sobre el mismo"</p>
             </article>
         </div>
-        <form>
-            <label for="input1">
-                <h2>Contactanos</h2>
-            </label>
-            <input type="text">
-
-            <label for="input2">Campo 2:</label>
-            <input type="email">
-
-            <textarea name="MiPrimerTextArea" id="TextArea1" cols="30"
-                rows="10">Utilice este cuadro para escribir</textarea>
-
-            <!-- Puedes agregar más campos según sea necesario -->
-
-            <input type="submit" value="Enviar">
-        </form>
+        <div class="contenedor4">
+            <form>
+                <label for="input1">
+                    <h2>Contactanos</h2>
+                </label>
+                <label for="input2">Nombre : </label>
+                <input type="text">
+                <label for="input3">Correo electronico :</label>
+                <input type="email">
+                <label for="input4">Mensaje : </label>
+                <textarea name="MiPrimerTextArea" id="TextArea1" cols="30"
+                    rows="10">Utilice este cuadro para escribir</textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </main>
     <footer>
         <ul>
