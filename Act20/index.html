@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body main {
-            font-family: Arial, sans-serif;
+        .color {
+            color: #8458b3;
+        }
+
+        .ancho85 {
+            width: 85%;
         }
 
         nav {
             color: white;
-            background-color: rgba(33, 106, 151, 0.8);
+            background-color: #8458b3;
             grid-area: nav;
             padding: 20px 0;
             display: flex;
@@ -29,9 +33,23 @@
             display: flex;
             list-style: none;
             gap: 20px;
+
         }
 
-        .TituloIzq {
+        .QuitarDecoAs {
+            text-decoration: none;
+        }
+
+        nav li {
+            text-decoration: none;
+            transition: background-color 0.5s;
+        }
+
+        nav li:hover {
+            background-color: rgb(49, 150, 244);
+        }
+
+        nav h2 {
             margin-left: 25px;
             display: flex;
         }
@@ -45,69 +63,71 @@
 
         /* main 1 de aqui hasta el fin es main s */
         .contenedor1 {
+            padding: 20px;
             grid-area: main1;
-            display: flex;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(242 239 239);
+        }
+
+        .contenedor1-1 {
             width: 100%;
+            display: flex;
+            align-items: center;
         }
 
-        .articulo1 {
-            margin: 64px;
-            padding: 4px;
-            float: left;
+
+        .contenido {
+            width: 80%;
+            flex: 1;
+            margin: auto;
         }
 
-        .articulo1 article {
-            /* Estilos para el artículo, puedes ajustar según tus necesidades */
-            line-height: 1.6;
-        }
-
-        .contenedor1 img {
-            border-top-left-radius: 25px;
+        .imagen {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
-            /* padding: 17px; */
-            margin: 45px;
-            height: 25%;
+            width: 50%;
         }
 
-        /* main 2 dijamosle  */
+        /* main 2 */
         .contenedor2 {
-            display: block;
-            grid-area: main2;
-            background-color: rgb(242 239 239);
             padding: 20px;
+            grid-area: main2;
+            background-color: rgb(255, 255, 255);
         }
 
+        .contenedor2-2 {
+            width: 100%;
+            display: flex;
+        }
 
-        .contenedor2 h2 {
-            text-align: lef
+        .contenedor-80 {
+            width: 80%;
+            margin: auto;
         }
 
         .contenedor2 img {
-            align-items: center;
             object-fit: cover;
-            width: 10pc;
-            margin-left: 87px;
-            height: 10pc;
-
+            width: 100px;
+            height: 100px;
         }
 
-        .contenedor2 p {
-            /* width: 100%; */
-            text-align: center;
+        .pMargen {
+            margin: 1px;
+        }
+
+        .articuloBarajdo {
+            display: flex;
         }
 
         .contenedor2 article {
-            margin: 10px;
-            /* margin-left: 10px; */
-            align-items: self-start;
-            width: 20pc;
-            height: 345px;
-            background-color: rgb(176, 172, 172);
-            border-radius: 10px;
-            display: inline-grid;
-            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin: 20px;
+            width: 25%;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5%;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease-out-in;
         }
 
@@ -131,20 +151,22 @@
         }
 
         .contenedor3 {
-            display: block;
-            grid-area: main2;
-            background-color: rgb(242 239 239);
             padding: 20px;
+            grid-area: main3;
+            background-color: rgb(242 239 239);
+        }
+
+        .contenedor-80-3 {
+            width: 100%;
+            margin: auto;
+            display: flex;
         }
 
         .contenedor3 article {
-            margin: 10px;
-            margin-left: 10%;
-            align-items: self-start;
-            width: 20pc;
-            background-color: rgb(176, 172, 172);
+            margin: 9px;
+            width: 31%;
+            background-color: rgb(255, 255, 255);
             border-radius: 10px;
-            display: inline-grid;
             box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease-out-in;
         }
@@ -153,13 +175,17 @@
             transform: scale(1.05);
         }
 
-        .contenedor3 h2 {
-            text-align: left;
+        .contenedor3 h3 {
+            text-align: center;
         }
 
-        .contenedor3,
-        p h4 {
+        .contenedor3 p {
 
+            text-align: center;
+        }
+
+        h4 {
+            color: rgba(33, 106, 151, 0.8);
             text-align: center;
         }
 
@@ -169,53 +195,45 @@
             margin: 5px;
         }
 
+        label h2 {
+            text-align: center;
+        }
+
         form {
             display: grid;
-            margin: 55px 64px 50px 120px;
             align-items: center;
             grid-area: main4;
-            flex-direction: column;
         }
 
-        form h3 {
-            float: left;
-        }
 
-        form input {
-
-            display: block;
-            height: 100%;
-            width: auto;
-        }
-
-        form textarea {
-            display: block;
-            height: 100%;
-            width: auto;
+        .boton {
+            color: white;
+            padding: 3px;
+            background-color: #8458b3;
+            margin: 44px 2px 40px 0px;
         }
 
         /* fin formulario */
         /* footer inicio */
         footer {
-            display: flex;
-            gap: 10%;
-            color: white;
+
             grid-area: footer;
             background-color: rgb(0, 0, 0);
-            justify-content: space-between;
-            flex-wrap: wrap;
+
         }
 
-
-        footer ul {
-            list-style: none;
-            margin: 18px 55px 10px -35px;
-            list-style: url('/media/examples/rocket.svg');
+        .OrganizacionFooter {
+            display: flex;
+            gap: 3%;
+            color: white;
+            justify-content: center;
         }
 
-        footer p {
-            display: block;
+        .contenedorFooter {
+            margin: auto;
+            width: 82%;
         }
+
 
         footer li {
             margin-bottom: 5px;
@@ -223,164 +241,204 @@
             list-style: none;
         }
 
-        /* foter  final */
+        /* Culo del footer */
         body {
             font-family: Arial, sans-serif;
             margin: 10px;
             grid-template-rows: auto 2fr auto;
             grid-template-areas:
-                /* Modificamos la cuadrícula para que nav ocupe toda la fila */
-                "nav nav"
-                "main1 main1 "
-                "main2 main2 "
-                "main3 main3"
-                "main4 main4"
-                "footer footer ";
-            /* Cambiamos el valor de la fila del main */
+                "nav"
+                "main1"
+                "main2"
+                "main3"
+                "main4"
+                "footer";
             background-color: white;
         }
 
-        @media screen and (max-width: 1280px) {
+        .lista {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* Estilos para pantallas más grandes (por defecto) */
+
+        @media screen and (max-width: 900px) {
             nav ul {
                 display: none;
             }
 
             nav button {
-                margin: 20px;
-                display: inline;
+                display: block;
+                margin-right: 20px;
+                text-align: center;
             }
 
-            .contenedor2 {
-                display: block;
-                grid-area: main2;
-                background-color: rgb(242 239 239);
-                padding: 20px;
-            }
 
-            .contenedor1 img {
-                display: block;
+            .contenedor2-2 {
+                flex-wrap: wrap;
             }
 
             .contenedor2 article {
-                margin-bottom: 20px;
-                margin-left: 131px;
+                height: 287px;
+                width: 100%;
             }
 
+            .contenedor-80-3 {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
+            }
         }
 
-        @media screen and (max-width: 693px) {
-            .contenedor2 {
-                display: grid;
-                justify-content: end;
-                align-content: stretch;
-                align-items: center;
-                justify-items: center;
-            }
 
-            .contenedor2 article {
-                display: grid;
-                justify-content: center;
+        @media screen and (max-width: 600px) {
+            nav ul {
+                display: none;
             }
-
-            nav button {
-                margin: 20px;
-                display: inline;
-            }
-
 
             nav input {
                 display: none;
             }
 
-            .contenedor1 {
+            nav button {
+                color: #000;
                 display: block;
+                margin-right: 20px;
+                text-align: center;
+            }
+
+            .contenedor2-2 {
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .imagen{
+                width: 79%;
+            }
+            .contenido{
+                width: 82%;
             }
         }
+
+        @media screen and (max-width: 360px) {
+
+            nav input {
+                display: none;
+            }
+
+            nav button {
+                color: #000;
+                display: block;
+                margin-right: 20px;
+                text-align: center;
+            }
+
+            .contenedorFooter {
+                flex-direction: column;
+            }
+        }
+
+        /*Aqui pongo los h4 por que solo tengo uno preguntar profesor si esrta bien o no*/
     </style>
 </head>
 
 <body>
     <nav>
-        <h2 class="TituloIzq">CIDETechs</h2>
-        <ul class="lista">
-            <li><a class="link" href="#">Inicio</a></li>
-            <li><a class="link" href="#">Sobre Nosotros</a></li>
-            <li><a class="link" href="#">Serveis</a></li>
-            <li><a class="link" href="#">Portofolio</a></li>
-            <li><a class="link" href="#">Contacto</a></li>
+        <h2>CIDETechs</h2>
+        <ul class="color">
+            <li><a class="QuitarDecoAs" href="#">Inicio</a></li>
+            <li><a class="QuitarDecoAs" href="#">Sobre Nosotros</a></li>
+            <li><a class="QuitarDecoAs" href="#">Serveis</a></li>
+            <li><a class="QuitarDecoAs" href="#">Portofolio</a></li>
+            <li><a class="QuitarDecoAs" href="#">Contacto</a></li>
         </ul>
         <button> ☰ </button>
         <input class="buscador" type="busqueda" id="busqueda" name="busqueda" placeholder="busqueda">
 
     </nav>
     <main>
-        <div class="contenedor1">
-            <div class="articulo1">
-                <h2>Sobre nosotros</h2>
-                <article>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti enim, veniam
-                    facilis vel error aut pariatur excepturi reiciendis fugit animi quos possimus iste voluptas!
-                    Reprehenderit magni fuga atque modi?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit esse saepe quibusdam nostrum quo.
-                    Laudantium rem facere voluptatibus adipisci doloribus debitis nulla? Quis qui, quas vero doloribus
-                    deleniti nulla odit!
-                </article>
-
+        <section class="contenedor1">
+            <div class="contenedor-80">
+                <div class="contenedor2-2">
+                    <article class="contenido">
+                        <h2>Sobre nosotros</h2>
+                        <p class="ancho50">Creación de soluciones visuales para tu marca. Incluyendo logotipos,
+                            identidad corporativa y
+                            publicidad, somos un equipo feliz, mira Juan que está a las 22:20 de un viernes con su
+                            ordenador intentando resolver una tontería, pero no se rendirá. ¿Por qué? Porque camino
+                            antes que final, vida antes que muerte y camino antes que destino</p>
+                    </article>
+                    <img class="ancho50 imagen" src="genteSeria.png.jpg" alt="imgannes-curriculum">
+                </div>
             </div>
-            <img class="img1" src="genteSeria.png" alt="">
-        </div>
-        <div class="contenedor2">
-            <h2>Nuestros servicios</h2>
+        </section>
+        <section class="contenedor2">
+            <div class="contenedor-80">
+                <h2>Nuestros servicios</h2>
+                <div class="contenedor2-2">
 
-            <article class="articuloDecorado">
-                <img class="imagenContenedor2" src="auriculares.png" alt="imgannes-curriculm">
-                <p class="primrera-linea">Diseño Grafico</p>
-                <p class="segunda-linea">Creacion de soluciones visuales para tu marca. Incluyendo logotipos,
-                    identidad corporativa y publicidad</p>
-            </article>
-            <article class="articuloDecorado">
-                <img class="imagenContenedor2" src="soporte.png" alt="imgannes-curriculm">
-                <p class="primrera-linea">Desarrollo WEB y videojuegos</p>
-                <p class="primrera-linea">Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
-                    tiendas en linea complejas </p>
-            </article>
-            <article class="articuloDecorado">
-                <img class="imagenContenedor2" src="desarrolloWEB.png" alt="imgannes-curriculm">
-                <p class="primrera-linea">Cualquier cosa blala</p>
-                <p class="segunda-linea">
-                    Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
-                    tiendas en linea complejas</p>
-            </article>
-            <article class="articuloDecorado">
-                <img class="imagenContenedor2" src="apreton.png" alt="imgannes-curriculm">
-                <p class="primrera-linea">Soporte tecnico</p>
-                <p class="segunda-linea">Asistencia y soporte continuo para todos nuestros servicios</p>
-            </article>
-        </div>
+                    <article>
+                        <img src="auriculares.png" alt="imgannes-curriculm">
+                        <h3 class="color">Diseño Grafico</h3>
+                        <p class="pMargen">Creacion de soluciones visuales para tu marca. Incluyendo logotipos,
+                            identidad corporativa y publicidad</p>
+                    </article>
+                    <article>
+                        <img class="imagenContenedor2" src="soporte.png" alt="imgannes-curriculm">
+                        <h3 class="color">Desarrollo WEB y videojuegos</h3>
+                        <p class="pMargen">Desarrollo de sitios web personalizados, desde paginas coorporativas
+                            hasta
+                            tiendas en linea complejas </p>
+                    </article>
+                    <article>
+                        <img src="desarrolloWEB.png" alt="imgannes-curriculm">
+                        <h3 class="color">Desarrollo WEB y videojuegos</h3>
+                        <p class="pMargen">
+                            Desarrollo de sitios web personalizados, desde paginas coorporativas hasta
+                            tiendas en linea complejas</p>
+                    </article>
+                    <article>
+                        <img src="apreton.png" alt="imgannes-curriculm">
+                        <h3 class="color">Desarrollo WEB y videojuegos</h3>
+                        <p class="pMargen">Asistencia y soporte continuo para todos nuestros servicios</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <div class="contenedor3">
-            <h2>Nuestros portfolios</h2>
-            <article class="box-la-del-izq">
-                <img class="imgPortfolio" src="oficina1.jpg" alt="imagen-portfolio">
-                <h4 class="primrera-linea">Patrick Rothfuss</h4>
-                <p class="segunda-linea">Posicion en la empresa</p>
-                <p class="tercera-linea">"Informacion sobre el mismo "</p>
-            </article>
-            <article class="box-la-del-medio">
-                <img class="imgPortfolio" src="oficina2.jpg" alt="imagen-portfolio">
-                <p class="primrera-linea">Patrick Rothfuss</p>
-                <p class="segunda-linea">Posicion en la empresa</p>
-                <p class="tercera-linea">"Informacion sobre el mismo "</p>
-            </article>
-            <article class="box-la-del-der">
-                <img class="imgPortfolio" src="oficina3.jpg" alt="imagen-portfolio">
-                <p class="primera-linea">Patrick Rothfuss</p>
-                <p class="segunda-linea">Posicion en la empresa</p>
-                <p class="tercera-linea">"Informacion sobre el mismo"</p>
-            </article>
+            <div class="contenedor-80">
+                <h2>Nuestros portfolios</h2>
+                <div class=" contenedor-80-3">
+                    <article>
+
+                        <img src="oficina1.jpg" alt="imagen-portfolio">
+                        <h3 class="color">Proyecto 1 </h3>
+                        <p>Descripcion del prroyecto</p>
+                        <p><a class="color QuitarDecoAs" href="http://">Ver detalles</a></p>
+                    </article>
+                    <article>
+                        <img src="oficina2.jpg" alt="imagen-portfolio">
+                        <h3 class="color">Proyecto 2</h3>
+                        <p class="segunda-linea">Posicion en la empresa</p>
+                        <p><a class="color QuitarDecoAs" href="http://">Ver detalles</a></p>
+                    </article>
+                    <article class="box-la-del-der">
+                        <img src="oficina3.jpg" alt="imagen-portfolio">
+                        <h3 class="color"> Poreyecto 3</h3>
+                        <p>Posicion en la empresa</p>
+                        <p><a class="color QuitarDecoAs" href="http://">Ver detalles</a></p>
+                    </article>
+
+                </div>
+            </div>
         </div>
-        <div class="contenedor4">
+        <div class="contenedor-80">
             <form>
+
                 <label for="input1">
                     <h2>Contactanos</h2>
                 </label>
@@ -391,38 +449,43 @@
                 <label for="input4">Mensaje : </label>
                 <textarea name="MiPrimerTextArea" id="TextArea1" cols="30"
                     rows="10">Utilice este cuadro para escribir</textarea>
-                <input type="submit" value="Enviar">
+                <input class=" boton" type="submit" value="Enviar">
+
             </form>
+
         </div>
     </main>
+
     <footer>
-        <ul>
-            <li>CIDETechs</li>
-            <li>
-                <p>CIDETechs bla bla bla</p>
-                <p>blablabla</p>
-                <p>blblallblablalba</p>
-            </li>
-        </ul>
-        <ul>
-            <li>Navegacion</li>
-            <li>Amy te quiero mucho </li>
-            <li>lorem</li>
-            <li>lorme</li>
-        </ul>
-        <ul>
-            <li>Contactos</li>
-            <li><a href="http://">Email</a></li>
-            <li>642125136</li>
-            <li>Carta por paloma</li>
-        </ul>
-        <ul>
-            <li>Redes</li>
-            <li> <a href="http://">Instagram</a></li>
-            <li><a href="http://">Tiktok</a></li>
-            <li><a href="http://">Facebook</a></li>
-        </ul>
+        <div class=" lista contenedorFooter OrganizacionFooter">
+            <ul class="OrganizacionFooterMediaquerying">
+                <li>CIDETechs</li>
+                <li>
+                    <p>CIDETechs bla bla bla</p>
+                </li>
+            </ul>
+            <ul class="OrganizacionFooterMediaquerying">
+                <li>Navegacion</li>
+                <li><a class="QuitarDecoAs" href="http://"></a>Sobre Nosotros</li>
+                <li><a class="QuitarDecoAs" href="http://"></a>Nuestros Servicios </li>
+                <li><a class="QuitarDecoAs" href="http://"></a>Nuestro Portfolio</li>
+                <li><a class="QuitarDecoAs" href="http://"></a>Contactanos</li>
+            </ul>
+            <ul class="OrganizacionFooterMediaquerying">
+                <li>Contactos</li>
+                <li><a href="http://"> Tarantino@gmail.es</a></li>
+                <li>+544333777 </li>
+                <li>Carta por paloma</li>
+            </ul>
+            <ul class="">
+                <li>Redes</li>
+                <li> <a href="http://">Instagram</a></li>
+                <li><a href="http://">Tiktok</a></li>
+                <li><a href="http://">Facebook</a></li>
+            </ul>
+        </div>
     </footer>
+
 </body>
 
 </html>
