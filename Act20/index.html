@@ -10,6 +10,10 @@
             color: #8458b3;
         }
 
+        .quitarColor {
+            color: #8458b3;
+        }
+
         .ancho85 {
             width: 85%;
         }
@@ -264,7 +268,7 @@
 
         /* Estilos para pantallas más grandes (por defecto) */
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width:1024px) {
             nav ul {
                 display: none;
             }
@@ -282,7 +286,7 @@
 
             .contenedor2 article {
                 height: 287px;
-                width: 100%;
+                width: 35%;
             }
 
             .contenedor-80-3 {
@@ -315,11 +319,17 @@
                 display: flex;
                 justify-content: center;
             }
-            .imagen{
+
+            .imagen {
                 width: 79%;
             }
-            .contenido{
+
+            .contenido {
                 width: 82%;
+            }
+
+            .contenedor3 article {
+                width: 100%;
             }
         }
 
@@ -349,9 +359,11 @@
     <nav>
         <h2>CIDETechs</h2>
         <ul class="color">
-            <li><a class="QuitarDecoAs" href="#">Inicio</a></li>
-            <li><a class="QuitarDecoAs" href="#">Sobre Nosotros</a></li>
-            <li><a class="QuitarDecoAs" href="#">Serveis</a></li>
+            <li><a class="QuitarDecoAs"
+                    href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fgato-moviendo-la-cabeza-gif-20524559&psig=AOvVaw1o0IJga8wq8RHctZVocTzK&ust=1700408147429000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDgmo7wzYIDFQAAAAAdAAAAABAE">Inicio</a>
+            </li>
+            <li><a class="QuitarDecoAs" href="https://www.youtube.com/watch?v=lahByHLTlrI">Sobre Nosotros</a></li>
+            <li><a class="QuitarDecoAs" href="https://www.youtube.com/watch?v=SF0Ewo5z7c4">Serveis</a></li>
             <li><a class="QuitarDecoAs" href="#">Portofolio</a></li>
             <li><a class="QuitarDecoAs" href="#">Contacto</a></li>
         </ul>
@@ -364,7 +376,7 @@
             <div class="contenedor-80">
                 <div class="contenedor2-2">
                     <article class="contenido">
-                        <h2>Sobre nosotros</h2>
+                        <h2 id="S1">Sobre nosotros</h2>
                         <p class="ancho50">Creación de soluciones visuales para tu marca. Incluyendo logotipos,
                             identidad corporativa y
                             publicidad, somos un equipo feliz, mira Juan que está a las 22:20 de un viernes con su
@@ -377,7 +389,7 @@
         </section>
         <section class="contenedor2">
             <div class="contenedor-80">
-                <h2>Nuestros servicios</h2>
+                <h2 id="S2">Nuestros servicios</h2>
                 <div class="contenedor2-2">
 
                     <article>
@@ -411,7 +423,7 @@
 
         <div class="contenedor3">
             <div class="contenedor-80">
-                <h2>Nuestros portfolios</h2>
+                <h2 id="S3">Nuestros portfolios</h2>
                 <div class=" contenedor-80-3">
                     <article>
 
@@ -437,7 +449,7 @@
             </div>
         </div>
         <div class="contenedor-80">
-            <form>
+            <form id="S4">
 
                 <label for="input1">
                     <h2>Contactanos</h2>
@@ -466,10 +478,11 @@
             </ul>
             <ul class="OrganizacionFooterMediaquerying">
                 <li>Navegacion</li>
-                <li><a class="QuitarDecoAs" href="http://"></a>Sobre Nosotros</li>
-                <li><a class="QuitarDecoAs" href="http://"></a>Nuestros Servicios </li>
-                <li><a class="QuitarDecoAs" href="http://"></a>Nuestro Portfolio</li>
-                <li><a class="QuitarDecoAs" href="http://"></a>Contactanos</li>
+                <a></a>
+                <li><a class="QuitarDecoAs quitarColor" href="#S1">Sobre Nosotros</a></li>
+                <li><a class="QuitarDecoAs quitarColor" href="#S2">Nuestros Servicios</a> </li>
+                <li><a class="QuitarDecoAs quitarColor" href="#S3">Nuestro Portfolio</a></li>
+                <li><a class="QuitarDecoAs quitarColor" href="#S4">Contactanos</a></li>
             </ul>
             <ul class="OrganizacionFooterMediaquerying">
                 <li>Contactos</li>
