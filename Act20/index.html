@@ -132,7 +132,7 @@
             text-align: center;
             margin: 20px;
             width: 25%;
-            height: 300px;
+            height: 400px;
             background-color: rgb(255, 255, 255);
             border-radius: 5%;
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -231,7 +231,7 @@
         }
 
         footer ul {
-            width: 19%;
+            width: 16%;
         }
 
         .OrganizacionFooter {
@@ -243,7 +243,7 @@
 
         .contenedorFooter {
             margin: auto;
-            width: 82%;
+            width: 95%;
         }
 
 
@@ -251,6 +251,10 @@
             margin-bottom: 5px;
             color: #ccc;
             list-style: none;
+        }
+
+        li img {
+            width: 20%;
         }
 
         /* Culo del footer */
@@ -275,6 +279,10 @@
             flex-wrap: wrap;
         }
 
+        .imagenDisplayer {
+            display: contents;
+        }
+
         /* Estilos para pantallas más grandes (por defecto) */
 
         @media screen and (max-width:1024px) {
@@ -294,7 +302,7 @@
             }
 
             .contenedor2 article {
-                height: 287px;
+                height: 313px;
                 width: 41%;
             }
 
@@ -511,9 +519,10 @@
             </ul>
             <ul class=" margen OrganizacionFooterMediaquerying">
                 <li>Redes</li>
-                <li> <a href="http://">Instagram</a></li>
-                <li><a href="http://">Tiktok</a></li>
-                <li><a href="http://">Facebook</a></li>
+                <li class="imagenDisplayer"><a href="#"><img src="fase.png" alt="facebook"></a></li>
+                <li class="imagenDisplayer"><a href="#"><img src="youtube.png" alt="youtube"></a></li>
+                <li class="imagenDisplayer"><a href="#"><img src="wats.png" alt="tiktok"></a></li>
+                <li class="imagenDisplayer"> <a href="#"><img src="insta.png" alt="instagram"></a></li>
             </ul>
         </div>
     </footer>
