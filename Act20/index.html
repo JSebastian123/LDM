@@ -36,7 +36,12 @@
             display: none;
         }
 
+        nav a {
+            color: #000;
+        }
+
         nav ul {
+
             position: relative;
             display: flex;
             list-style: none;
@@ -49,12 +54,13 @@
         }
 
         nav li {
+
             text-decoration: none;
-            transition: background-color 0.5s;
+            transition: background-color 0.6s;
         }
 
         nav li:hover {
-            background-color: rgb(49, 150, 244);
+            background-color: #916bb9;
         }
 
         nav h2 {
@@ -132,7 +138,7 @@
             text-align: center;
             margin: 20px;
             width: 25%;
-            height: 400px;
+            height: 307px;
             background-color: rgb(255, 255, 255);
             border-radius: 5%;
             box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
@@ -144,14 +150,13 @@
             transform: scale(1.05);
         }
 
-
-
         /* fin del "main 2" */
 
         /* principio main 3 */
 
         .contenedor3 img {
-            border-radius: inherit;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
             position: relative;
             object-fit: cover;
             width: 100%;
@@ -192,10 +197,6 @@
             text-align: center;
         }
 
-        h4 {
-            color: rgba(33, 106, 151, 0.8);
-            text-align: center;
-        }
 
         /* fin main 3 */
         /* Inicio formulario0 */
@@ -253,6 +254,15 @@
             list-style: none;
         }
 
+        .RedesOpacidad {
+            opacity: 1;
+        }
+
+        .RedesOpacidad:hover {
+            opacity: 0.5;
+            zoom: 1;
+        }
+
         li img {
             width: 20%;
         }
@@ -285,7 +295,7 @@
 
         /* Estilos para pantallas más grandes (por defecto) */
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1000px) {
             nav ul {
                 display: none;
             }
@@ -325,7 +335,7 @@
             }
 
             .contenedor2 article {
-                height: 287px;
+                height: 308px;
                 width: 50%;
             }
 
@@ -347,7 +357,7 @@
             }
 
             .contenedor2 article {
-                height: 287px;
+                height: 307px;
                 width: 100%;
             }
 
@@ -358,9 +368,13 @@
             .contenedor3 article {
                 width: 100%;
             }
+
+            footer ul {
+                width: 20%;
+            }
         }
 
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 470px) {
 
             nav input {
                 display: none;
@@ -373,8 +387,14 @@
                 text-align: center;
             }
 
+            footer ul {
+                width: 40%;
+            }
+
             .contenedorFooter {
+                display: flex;
                 flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -386,17 +406,15 @@
     <nav>
         <h2>CIDETechs</h2>
         <ul class="color">
-            <li><a class="QuitarDecoAs"
-                    href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fgato-moviendo-la-cabeza-gif-20524559&psig=AOvVaw1o0IJga8wq8RHctZVocTzK&ust=1700408147429000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDgmo7wzYIDFQAAAAAdAAAAABAE">Inicio</a>
-            </li>
-            <li><a class="QuitarDecoAs" href="https://www.youtube.com/watch?v=lahByHLTlrI">Sobre Nosotros</a></li>
-            <li><a class="QuitarDecoAs" href="https://www.youtube.com/watch?v=SF0Ewo5z7c4">Serveis</a></li>
-            <li><a class="QuitarDecoAs" href="#">Portofolio</a></li>
-            <li><a class="QuitarDecoAs" href="#">Contacto</a></li>
+            <li><a class="QuitarDecoAs" href="#S1">Inicio</a></li>
+            <li><a class="QuitarDecoAs" href="#S2">Sobre Nosotros</a></li>
+            <li><a class="QuitarDecoAs" href="#S3">Serveis</a></li>
+            <li><a class="QuitarDecoAs" href="#S4">Portofolio</a></li>
+            <li><a class="QuitarDecoAs" href="#S5">Contacto</a></li>
         </ul>
-        <button> ☰ </button>
+        
         <input class="buscador" type="busqueda" id="busqueda" name="busqueda" placeholder="busqueda">
-
+        <button> ☰ </button>
     </nav>
     <main>
         <section class="contenedor1">
@@ -448,7 +466,7 @@
             </div>
         </section>
 
-        <div class="contenedor3">
+        <section class="contenedor3">
             <div class="contenedor-80">
                 <h2 id="S3">Nuestros portfolios</h2>
                 <div class=" contenedor-80-3">
@@ -474,8 +492,8 @@
 
                 </div>
             </div>
-        </div>
-        <div class="contenedor-80">
+        </section>
+        <section class="contenedor-80">
             <form id="S4">
 
                 <label for="input1">
@@ -492,18 +510,18 @@
 
             </form>
 
-        </div>
+        </section>
     </main>
 
     <footer>
         <div class=" lista contenedorFooter OrganizacionFooter">
-            <ul class="OrganizacionFooterMediaquerying">
+            <ul class=" margen OrganizacionFooterMediaquerying">
                 <li>CIDETechs</li>
                 <li>
-                    <p>CIDETechs bla bla bla</p>
+                    <p>Especializacion en cosas de cide y cide mas cide </p>
                 </li>
             </ul>
-            <ul class="margen OrganizacionFooterMediaquerying">
+            <ul class="OrganizacionFooterMediaquerying">
                 <li>Navegacion</li>
                 <a></a>
                 <li><a class="QuitarDecoAs quitarColor" href="#S1">Sobre Nosotros</a></li>
@@ -511,22 +529,24 @@
                 <li><a class="QuitarDecoAs quitarColor" href="#S3">Nuestro Portfolio</a></li>
                 <li><a class="QuitarDecoAs quitarColor" href="#S4">Contactanos</a></li>
             </ul>
-            <ul class="OrganizacionFooterMediaquerying">
+            <ul class="margen OrganizacionFooterMediaquerying">
                 <li>Contactos</li>
                 <li><a href="http://"> Tarantino@gmail.es</a></li>
                 <li>+544333777 </li>
                 <li>Carta por paloma</li>
             </ul>
-            <ul class=" margen OrganizacionFooterMediaquerying">
+            <ul class="margen OrganizacionFooterMediaquerying">
                 <li>Redes</li>
-                <li class="imagenDisplayer"><a href="#"><img src="fase.png" alt="facebook"></a></li>
-                <li class="imagenDisplayer"><a href="#"><img src="youtube.png" alt="youtube"></a></li>
-                <li class="imagenDisplayer"><a href="#"><img src="wats.png" alt="tiktok"></a></li>
-                <li class="imagenDisplayer"> <a href="#"><img src="insta.png" alt="instagram"></a></li>
+                <a class="RedesOpacidad" href=""><i class="fa-brands fa-facebook"></i></a>
+                <a class="RedesOpacidad" href=""><i class="fa-brands fa-twitter"></i></a>
+                <a class="RedesOpacidad" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="RedesOpacidad"  id="S5" href=""><i class="fa-brands fa-linkedin"></i></a>
             </ul>
         </div>
     </footer>
 
+
+    <script src="https://kit.fontawesome.com/ed948b3189.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
