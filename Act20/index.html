@@ -11,20 +11,16 @@
         }
 
         .color {
-            color: #8458b3;
+            color: #5a58b3;
         }
 
         .quitarColor {
-            color: #8458b3;
-        }
-
-        .ancho85 {
-            width: 85%;
+            color: #5a58b3;
         }
 
         nav {
             color: white;
-            background-color: #8458b3;
+            background-color: #5a58b3;
             grid-area: nav;
             padding: 20px 0;
             display: flex;
@@ -60,7 +56,7 @@
         }
 
         nav li:hover {
-            background-color: #916bb9;
+            background-color: #3a3894;
         }
 
         nav h2 {
@@ -79,7 +75,7 @@
         .contenedor1 {
             padding: 20px;
             grid-area: main1;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(242 239 239);
         }
 
         .contenedor1-1 {
@@ -96,22 +92,18 @@
         }
 
         .imagen {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
+            border-radius: 10px;
             width: 50%;
         }
 
         /* main 2 */
         .contenedor2 {
-            padding: 20px;
             grid-area: main2;
             background-color: rgb(255, 255, 255);
         }
 
         .contenedor2-2 {
-            width: 100%;
+
             display: flex;
         }
 
@@ -218,7 +210,7 @@
         .boton {
             color: white;
             padding: 3px;
-            background-color: #8458b3;
+            background-color: #5a58b3;
             margin: 44px 2px 40px 0px;
         }
 
@@ -231,9 +223,6 @@
 
         }
 
-        footer ul {
-            width: 16%;
-        }
 
         .OrganizacionFooter {
             display: flex;
@@ -244,7 +233,7 @@
 
         .contenedorFooter {
             margin: auto;
-            width: 95%;
+            width: 80%;
         }
 
 
@@ -255,6 +244,7 @@
         }
 
         .RedesOpacidad {
+            color: #5a58b3;
             opacity: 1;
         }
 
@@ -295,7 +285,7 @@
 
         /* Estilos para pantallas más grandes (por defecto) */
 
-        @media screen and (max-width:1000px) {
+        @media screen and (max-width:1024px) {
             nav ul {
                 display: none;
             }
@@ -323,7 +313,6 @@
                 align-content: center;
             }
         }
-
 
         @media screen and (max-width: 600px) {
             nav ul {
@@ -370,11 +359,11 @@
             }
 
             footer ul {
-                width: 20%;
+                padding: 0px;
             }
         }
 
-        @media screen and (max-width: 470px) {
+        @media screen and (max-width: 540px) {
 
             nav input {
                 display: none;
@@ -388,7 +377,7 @@
             }
 
             footer ul {
-                width: 40%;
+                width: 51%;
             }
 
             .contenedorFooter {
@@ -397,8 +386,6 @@
                 align-items: center;
             }
         }
-
-        /*Aqui pongo los h4 por que solo tengo uno preguntar profesor si esrta bien o no*/
     </style>
 </head>
 
@@ -406,13 +393,13 @@
     <nav>
         <h2>CIDETechs</h2>
         <ul class="color">
-            <li><a class="QuitarDecoAs" href="#S1">Inicio</a></li>
-            <li><a class="QuitarDecoAs" href="#S2">Sobre Nosotros</a></li>
-            <li><a class="QuitarDecoAs" href="#S3">Serveis</a></li>
-            <li><a class="QuitarDecoAs" href="#S4">Portofolio</a></li>
-            <li><a class="QuitarDecoAs" href="#S5">Contacto</a></li>
+            <li><a class="QuitarDecoAs" href="#">Inicio</a></li>
+            <li><a class="QuitarDecoAs" href="#S1">Sobre Nosotros</a></li>
+            <li><a class="QuitarDecoAs" href="#S2">Serveis</a></li>
+            <li><a class="QuitarDecoAs" href="#S3">Portofolio</a></li>
+            <li><a class="QuitarDecoAs" href="#S4">Contacto</a></li>
         </ul>
-        
+
         <input class="buscador" type="busqueda" id="busqueda" name="busqueda" placeholder="busqueda">
         <button> ☰ </button>
     </nav>
@@ -422,13 +409,13 @@
                 <div class="contenedor2-2">
                     <article class="contenido">
                         <h2 id="S1">Sobre nosotros</h2>
-                        <p class="ancho50">Creación de soluciones visuales para tu marca. Incluyendo logotipos,
-                            identidad corporativa y
-                            publicidad, somos un equipo feliz, mira Juan que está a las 22:20 de un viernes con su
-                            ordenador intentando resolver una tontería, pero no se rendirá. ¿Por qué? Porque camino
-                            antes que final, vida antes que muerte y camino antes que destino</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ut eos autem quo Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. Necessitatibus dolore eius explicabo nam ab
+                            sunt laborum pariatur sed, vel commodi quibusdam libero qui officia modi dolorem provident
+                            animi voluptas quod.id dolor doloribus, quidem ut! Doloremque, dolor? Distinctio,
+                            consequatur nulla.</p>
                     </article>
-                    <img class="ancho50 imagen" src="genteSeria.png.jpg" alt="imgannes-curriculum">
+                    <img class="imagen" src="genteSeria.png.jpg" alt="imgannes-curriculum">
                 </div>
             </div>
         </section>
@@ -485,7 +472,7 @@
                     </article>
                     <article class="box-la-del-der">
                         <img src="oficina3.jpg" alt="imagen-portfolio">
-                        <h3 class="color"> Poreyecto 3</h3>
+                        <h3 class="color"> Proyecto 3</h3>
                         <p>Posicion en la empresa</p>
                         <p><a class="color QuitarDecoAs" href="http://">Ver detalles</a></p>
                     </article>
@@ -521,7 +508,7 @@
                     <p>Especializacion en cosas de cide y cide mas cide </p>
                 </li>
             </ul>
-            <ul class="OrganizacionFooterMediaquerying">
+            <ul class=" OrganizacionFooterMediaquerying">
                 <li>Navegacion</li>
                 <a></a>
                 <li><a class="QuitarDecoAs quitarColor" href="#S1">Sobre Nosotros</a></li>
@@ -529,18 +516,18 @@
                 <li><a class="QuitarDecoAs quitarColor" href="#S3">Nuestro Portfolio</a></li>
                 <li><a class="QuitarDecoAs quitarColor" href="#S4">Contactanos</a></li>
             </ul>
-            <ul class="margen OrganizacionFooterMediaquerying">
+            <ul class=" OrganizacionFooterMediaquerying">
                 <li>Contactos</li>
                 <li><a href="http://"> Tarantino@gmail.es</a></li>
                 <li>+544333777 </li>
                 <li>Carta por paloma</li>
             </ul>
-            <ul class="margen OrganizacionFooterMediaquerying">
+            <ul class=" OrganizacionFooterMediaquerying">
                 <li>Redes</li>
                 <a class="RedesOpacidad" href=""><i class="fa-brands fa-facebook"></i></a>
                 <a class="RedesOpacidad" href=""><i class="fa-brands fa-twitter"></i></a>
                 <a class="RedesOpacidad" href=""><i class="fa-brands fa-instagram"></i></a>
-                <a class="RedesOpacidad"  id="S5" href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a class="RedesOpacidad" id="S5" href=""><i class="fa-brands fa-linkedin"></i></a>
             </ul>
         </div>
     </footer>
